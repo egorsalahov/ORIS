@@ -1,0 +1,16 @@
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniHttpServerEgor\bin\Debug\net8.0\MiniHttpServerEgor.exe
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniHttpServerEgor\bin\Debug\net8.0\MiniHttpServerEgor.deps.json
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniHttpServerEgor\bin\Debug\net8.0\MiniHttpServerEgor.runtimeconfig.json
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniHttpServerEgor\bin\Debug\net8.0\MiniHttpServerEgor.dll
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniHttpServerEgor\bin\Debug\net8.0\MiniHttpServerEgor.pdb
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniHttpServerEgor\obj\Debug\net8.0\MiniHttpServerEgor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniHttpServerEgor\obj\Debug\net8.0\MiniHttpServerEgor.AssemblyInfoInputs.cache
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniHttpServerEgor\obj\Debug\net8.0\MiniHttpServerEgor.AssemblyInfo.cs
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniHttpServerEgor\obj\Debug\net8.0\MiniHttpServerEgor.csproj.CoreCompileInputs.cache
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniHttpServerEgor\obj\Debug\net8.0\MiniHttpServerEgor.dll
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniHttpServerEgor\obj\Debug\net8.0\refint\MiniHttpServerEgor.dll
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniHttpServerEgor\obj\Debug\net8.0\MiniHttpServerEgor.pdb
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniHttpServerEgor\obj\Debug\net8.0\MiniHttpServerEgor.genruntimeconfig.cache
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniHttpServerEgor\obj\Debug\net8.0\ref\MiniHttpServerEgor.dll
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniHttpServerEgor\bin\Debug\net8.0\settings.json
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniHttpServerEgor\bin\Debug\net8.0\Public\index.html
