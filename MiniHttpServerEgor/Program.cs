@@ -1,5 +1,6 @@
 ﻿using MiniHttpServer.Server;
 using MiniHttpServer.Settings;
+using MiniHttpServerEgor.Shared;
 using System.Text;
 
 Singleton singleton = Singleton.GetInstance();
@@ -12,18 +13,35 @@ server.Command = async (context) =>
 
     //Формируем ответ
     var response = context.Response;
-    string? responseText = File.ReadAllText("Public/index.html");
 
+    //смотрим url запросика, конкретно абсолютный путь для удобства нашего на сервере
+    string? path = context.Request.Url?.AbsolutePath;
 
-    //Отправляем html в виде потока байтов
-    byte[] buffer = Encoding.UTF8.GetBytes(responseText);
+    //сюда байты ответика будем записывать
+    byte[]? responseBytes;
 
-    response.ContentLength64 = buffer.Length;
-    using Stream output = response.OutputStream;
+    if (path == null || path == "/")
+        responseBytes = GetResponseBytes.Invoke($"Public/index.html");
+    else
+    {
+        responseBytes = GetResponseBytes.Invoke($"{path}/");
+    }
 
-    await output.WriteAsync(buffer);
-    await output.FlushAsync();
+    if (responseBytes == null)
+    {
+        response.OutputStream.Close();
+    }
+    else
+    {
+        response.ContentType = GetContentType.Invoke(path);
 
+        response.ContentLength64 = responseBytes.Length;
+
+        using Stream output = response.OutputStream;
+
+        await output.WriteAsync(responseBytes);
+        await output.FlushAsync();
+    }
 };
 
 

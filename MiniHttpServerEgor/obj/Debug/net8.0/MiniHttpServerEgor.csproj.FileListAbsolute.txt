@@ -14,3 +14,4 @@ C:\Users\egors\source\repos\MiniHttpServerEgor\MiniHttpServerEgor\obj\Debug\net8
 C:\Users\egors\source\repos\MiniHttpServerEgor\MiniHttpServerEgor\obj\Debug\net8.0\ref\MiniHttpServerEgor.dll
 C:\Users\egors\source\repos\MiniHttpServerEgor\MiniHttpServerEgor\bin\Debug\net8.0\settings.json
 C:\Users\egors\source\repos\MiniHttpServerEgor\MiniHttpServerEgor\bin\Debug\net8.0\Public\index.html
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniHttpServerEgor\obj\Debug\net8.0\MiniHttpServerEgor.sourcelink.json
