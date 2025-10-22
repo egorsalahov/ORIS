@@ -24,7 +24,7 @@ server.Command = async (context) =>
         responseBytes = GetResponseBytes.Invoke($"Public/index.html");
     else
     {
-        responseBytes = GetResponseBytes.Invoke($"{path}/");
+        responseBytes = GetResponseBytes.Invoke($"{path}");
     }
 
     if (responseBytes == null)

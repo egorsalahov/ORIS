@@ -1,4 +1,6 @@
 ﻿using MiniHttpServer.Settings;
+using MiniHttpServerEgor.Core.Abstracts;
+using MiniHttpServerEgor.Core.Handlers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -58,21 +60,12 @@ namespace MiniHttpServer.Server
         {
             if (_listener.IsListening)
             {
-                if (cts.IsCancellationRequested) return;
-
                 var context = _listener.EndGetContext(ar);
 
-                if (Command != null)
-                {
-                    Command(context);
-                }
-
-                else
-                {
-                    var request = context.Request;
-
-                    Console.WriteLine($"{request.Url}");
-                }
+                Handler staticFilesHandler = new StaticFilesHandler();
+                Handler endpointsHandler = new EndpointsHandlers();
+                staticFilesHandler.Successor = endpointsHandler;
+                staticFilesHandler.HandleRequest(context);
 
                 Receive();
             }
