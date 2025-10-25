@@ -4,8 +4,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniHttpServerEgor", "MiniHttpServerEgor\MiniHttpServerEgor.csproj", "{6EBEA40F-97A5-4A5D-91E3-4B9D1E61925B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{79DCA8A8-39BE-43ED-A423-140E0188768E} = {79DCA8A8-39BE-43ED-A423-140E0188768E}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework2", "Homework2", "{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniTemplateEnginge", "MiniTemplateEnginge\MiniTemplateEnginge.csproj", "{5556D096-C30C-40EE-89A1-C16CCF69238A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniTemplateEngingeUnitTests", "MiniTemplateEngingeUnitTests\MiniTemplateEngingeUnitTests.csproj", "{706CF149-A99A-4017-8480-D6BB8BE7ACAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniHttpServerEgor.Framework", "MiniHttpServerEgor.Framework\MiniHttpServerEgor.Framework.csproj", "{79DCA8A8-39BE-43ED-A423-140E0188768E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +26,27 @@ Global
 		{6EBEA40F-97A5-4A5D-91E3-4B9D1E61925B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EBEA40F-97A5-4A5D-91E3-4B9D1E61925B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EBEA40F-97A5-4A5D-91E3-4B9D1E61925B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5556D096-C30C-40EE-89A1-C16CCF69238A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5556D096-C30C-40EE-89A1-C16CCF69238A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5556D096-C30C-40EE-89A1-C16CCF69238A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5556D096-C30C-40EE-89A1-C16CCF69238A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{706CF149-A99A-4017-8480-D6BB8BE7ACAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{706CF149-A99A-4017-8480-D6BB8BE7ACAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{706CF149-A99A-4017-8480-D6BB8BE7ACAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{706CF149-A99A-4017-8480-D6BB8BE7ACAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79DCA8A8-39BE-43ED-A423-140E0188768E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79DCA8A8-39BE-43ED-A423-140E0188768E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79DCA8A8-39BE-43ED-A423-140E0188768E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79DCA8A8-39BE-43ED-A423-140E0188768E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6EBEA40F-97A5-4A5D-91E3-4B9D1E61925B} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+		{5556D096-C30C-40EE-89A1-C16CCF69238A} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+		{706CF149-A99A-4017-8480-D6BB8BE7ACAD} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+		{79DCA8A8-39BE-43ED-A423-140E0188768E} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E54F3EC-9360-41DC-B1C6-3AD27E92E382}

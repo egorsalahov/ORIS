@@ -1,0 +1,12 @@
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniTemplateEnginge\bin\Debug\net8.0\MiniTemplateEnginge.deps.json
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniTemplateEnginge\bin\Debug\net8.0\MiniTemplateEnginge.dll
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniTemplateEnginge\bin\Debug\net8.0\MiniTemplateEnginge.pdb
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniTemplateEnginge\obj\Debug\net8.0\MiniTemplateEnginge.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniTemplateEnginge\obj\Debug\net8.0\MiniTemplateEnginge.AssemblyInfoInputs.cache
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniTemplateEnginge\obj\Debug\net8.0\MiniTemplateEnginge.AssemblyInfo.cs
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniTemplateEnginge\obj\Debug\net8.0\MiniTemplateEnginge.csproj.CoreCompileInputs.cache
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniTemplateEnginge\obj\Debug\net8.0\MiniTemplateEnginge.sourcelink.json
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniTemplateEnginge\obj\Debug\net8.0\MiniTemplateEnginge.dll
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniTemplateEnginge\obj\Debug\net8.0\refint\MiniTemplateEnginge.dll
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniTemplateEnginge\obj\Debug\net8.0\MiniTemplateEnginge.pdb
+C:\Users\egors\source\repos\MiniHttpServerEgor\MiniTemplateEnginge\obj\Debug\net8.0\ref\MiniTemplateEnginge.dll
