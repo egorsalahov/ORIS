@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MiniHttpServerEgor.Settings.EmailSettings
+namespace MiniHttpServerEgorFramework.Settings.EmailSettings
 {
     public class SmtpSettings
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MiniHttpServerEgor.Core.Attributes
+namespace MiniHttpServerEgorFramework.Core.Attributes
 {
     [AttributeUsage(AttributeTargets.Class)]
     public class EndpointAttribute : Attribute

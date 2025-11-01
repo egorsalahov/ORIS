@@ -5,7 +5,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MiniHttpServerEgor.Core.Abstracts
+namespace MiniHttpServerEgorFramework.Core.Abstracts
 {
     abstract class Handler
     {

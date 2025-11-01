@@ -1,31 +1,41 @@
-﻿using MiniHttpServerEgor.Core.Attributes;
+﻿
 using MiniHttpServerEgor.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MiniHttpServerEgorFramework.Core.Attributes;
+using MiniHttpServerEgorFramework.Core;
+using MiniHttpServerEgorFramework.Core.HttpResponse;
 
 namespace MiniHttpServerEgor.Endpoints
 {
     [Endpoint]
-    internal class AuthEndpoint
+    public class AuthEndpoint : EndpointBase
     {
-        private readonly EmailService emailService = new EmailService();
-
-        // Get /auth/
+        // Get /auth/login
         [HttpGet]
-        public string LoginPage()
+        public IHttpResult LoginPage()
         {
-            return "index.html";
+            var obj = new { };
+
+            return Page("index.html", obj);
         }
 
+        // Get /auth/json
+        [HttpGet("json")]
+        public IHttpResult GetJson()
+        {
+            var user = new { Name = "sfdsdf" };
+
+            return null;//Json(user);
+
+            // ответ  '{"username":"Борис","Age":23}'
+        }
+
+
         // Post /auth/
-        [HttpPost("/auth")]
-        public async Task Login(string  email, string password)
+        [HttpPost]
+        public void Login(/*string email, string password*/)
         {
             // Отправка на почту email указанного email и password
-            await emailService.SendEmailAsync(email, "Авторизация прошла успешно", password);
+            // EmailService.SendEmail(email, title, message);
         }
 
 

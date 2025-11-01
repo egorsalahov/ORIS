@@ -1,14 +1,14 @@
-﻿using MiniHttpServerEgor.Core.Abstracts;
-using MiniHttpServerEgor.Shared;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using MiniHttpServerEgor.Shared;
 
-namespace MiniHttpServerEgor.Core.Handlers
+using MiniHttpServerEgorFramework.Core.Abstracts;
+using MiniHttpServerEgorFramework.Shared;
+
+namespace MiniHttpServerEgorFramework.Core.Handlers
 {
     class StaticFilesHandler : Handler
     {
@@ -31,7 +31,7 @@ namespace MiniHttpServerEgor.Core.Handlers
                 */
                 buffer = GetResponseBytes.Invoke(path);
 
-                response.ContentType = MiniHttpServerEgor.Shared.GetContentType.Invoke(path.Trim('/'));
+                response.ContentType = GetContentType.Invoke(path.Trim('/'));
 
                 if (buffer == null)
                 {

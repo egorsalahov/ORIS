@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace MiniHttpServer.Settings
+namespace MiniHttpServerEgorFramework.Settings
 {
     public class Singleton
     {

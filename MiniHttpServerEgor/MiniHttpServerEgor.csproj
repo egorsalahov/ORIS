@@ -8,6 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MiniHttpServerEgor.Framework\MiniHttpServerEgorFramework.csproj" />
+    <ProjectReference Include="..\MyORMLibrary\MyORMLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="HomeWorkForEmail.zip">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -281,11 +286,12 @@
     <None Update="Public\Delta\images\work-in-delta.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="settings.json">
+
+    <None Update="Public\index.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
 
-    <None Update="Public\index.html">
+    <None Update="Template\Page\login.thtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

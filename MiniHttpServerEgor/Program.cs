@@ -1,7 +1,10 @@
-﻿using MiniHttpServer.Server;
-using MiniHttpServer.Settings;
-using MiniHttpServerEgor.Shared;
+﻿using MiniHttpServerEgor;
+using MiniHttpServerEgorFramework.Server;
+using MiniHttpServerEgorFramework.Settings;
+using MiniHttpServerEgorFramework.Shared;
 using System.Text;
+
+
 
 Singleton singleton = Singleton.GetInstance();
 JsonEntity settings = singleton.Settings;
