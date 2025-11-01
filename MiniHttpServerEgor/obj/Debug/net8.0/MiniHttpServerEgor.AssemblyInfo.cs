@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniHttpServerEgor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+adf097e6efda720d8b9ee5327953d186bbf93264")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8fa55a59476c6aa79f55ca6bea4383fc60dc6335")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniHttpServerEgor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniHttpServerEgor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

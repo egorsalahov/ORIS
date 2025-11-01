@@ -1,11 +1,7 @@
-﻿using MiniHttpServerEgor.Settings.EmailSettings;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿
+using MiniHttpServerEgorFramework.Settings.EmailSettings;
 using System.Net;
 using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MiniHttpServerEgor.Services
 {

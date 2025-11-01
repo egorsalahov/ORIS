@@ -1,6 +1,7 @@
-﻿using MiniHttpServer.Settings;
-using MiniHttpServerEgor.Core.Abstracts;
-using MiniHttpServerEgor.Core.Handlers;
+﻿
+using MiniHttpServerEgorFramework.Core.Abstracts;
+using MiniHttpServerEgorFramework.Core.Handlers;
+using MiniHttpServerEgorFramework.Settings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 
-namespace MiniHttpServer.Server
+namespace MiniHttpServerEgorFramework.Server
 {
     public class HttpServer
     {
@@ -63,7 +64,7 @@ namespace MiniHttpServer.Server
                 var context = _listener.EndGetContext(ar);
 
                 Handler staticFilesHandler = new StaticFilesHandler();
-                Handler endpointsHandler = new EndpointsHandlers();
+                Handler endpointsHandler = new EndpointsHandler();
                 staticFilesHandler.Successor = endpointsHandler;
                 staticFilesHandler.HandleRequest(context);
 

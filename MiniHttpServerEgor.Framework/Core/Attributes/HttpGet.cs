@@ -4,16 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MiniHttpServerEgor.Core.Attributes
+namespace MiniHttpServerEgorFramework.Core.Attributes
 {
     [AttributeUsage(AttributeTargets.Method)]
-    public class HttpPost : Attribute
+    public class HttpGet : Attribute
     {
         public string Route { get; }
-        public HttpPost(string route)
+        public HttpGet(string route)
         {
             Route = route;
         }
-        public HttpPost() { }
+
+        public HttpGet() { }
     }
 }

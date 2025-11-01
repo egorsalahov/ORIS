@@ -4,14 +4,14 @@
     "C:\\Users\\egors\\source\\repos\\MiniHttpServerEgor\\MiniHttpServerEgor\\MiniHttpServerEgor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\egors\\source\\repos\\MiniHttpServerEgor\\MiniHttpServerEgor\\MiniHttpServerEgor.csproj": {
+    "C:\\Users\\egors\\source\\repos\\MiniHttpServerEgor\\MiniHttpServerEgor.Framework\\MiniHttpServerEgorFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\egors\\source\\repos\\MiniHttpServerEgor\\MiniHttpServerEgor\\MiniHttpServerEgor.csproj",
-        "projectName": "MiniHttpServerEgor",
-        "projectPath": "C:\\Users\\egors\\source\\repos\\MiniHttpServerEgor\\MiniHttpServerEgor\\MiniHttpServerEgor.csproj",
+        "projectUniqueName": "C:\\Users\\egors\\source\\repos\\MiniHttpServerEgor\\MiniHttpServerEgor.Framework\\MiniHttpServerEgorFramework.csproj",
+        "projectName": "MiniHttpServerEgorFramework",
+        "projectPath": "C:\\Users\\egors\\source\\repos\\MiniHttpServerEgor\\MiniHttpServerEgor.Framework\\MiniHttpServerEgorFramework.csproj",
         "packagesPath": "C:\\Users\\egors\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\egors\\source\\repos\\MiniHttpServerEgor\\MiniHttpServerEgor\\obj\\",
+        "outputPath": "C:\\Users\\egors\\source\\repos\\MiniHttpServerEgor\\MiniHttpServerEgor.Framework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,149 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\egors\\source\\repos\\MiniHttpServerEgor\\MiniHttpServerEgor\\MiniHttpServerEgor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\egors\\source\\repos\\MiniHttpServerEgor\\MiniHttpServerEgor\\MiniHttpServerEgor.csproj",
+        "projectName": "MiniHttpServerEgor",
+        "projectPath": "C:\\Users\\egors\\source\\repos\\MiniHttpServerEgor\\MiniHttpServerEgor\\MiniHttpServerEgor.csproj",
+        "packagesPath": "C:\\Users\\egors\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\egors\\source\\repos\\MiniHttpServerEgor\\MiniHttpServerEgor\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\egors\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\egors\\source\\repos\\MiniHttpServerEgor\\MiniHttpServerEgor.Framework\\MiniHttpServerEgorFramework.csproj": {
+                "projectPath": "C:\\Users\\egors\\source\\repos\\MiniHttpServerEgor\\MiniHttpServerEgor.Framework\\MiniHttpServerEgorFramework.csproj"
+              },
+              "C:\\Users\\egors\\source\\repos\\MiniHttpServerEgor\\MyORMLibrary\\MyORMLibrary.csproj": {
+                "projectPath": "C:\\Users\\egors\\source\\repos\\MiniHttpServerEgor\\MyORMLibrary\\MyORMLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\egors\\source\\repos\\MiniHttpServerEgor\\MyORMLibrary\\MyORMLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\egors\\source\\repos\\MiniHttpServerEgor\\MyORMLibrary\\MyORMLibrary.csproj",
+        "projectName": "MyORMLibrary",
+        "projectPath": "C:\\Users\\egors\\source\\repos\\MiniHttpServerEgor\\MyORMLibrary\\MyORMLibrary.csproj",
+        "packagesPath": "C:\\Users\\egors\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\egors\\source\\repos\\MiniHttpServerEgor\\MyORMLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\egors\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.1.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

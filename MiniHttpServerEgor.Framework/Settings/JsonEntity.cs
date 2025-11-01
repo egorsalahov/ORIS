@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MiniHttpServer.Settings
+namespace MiniHttpServerEgorFramework.Settings
 {
     public class JsonEntity
     {

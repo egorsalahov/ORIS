@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniHttpServerEgor", "MiniHttpServerEgor\MiniHttpServerEgor.csproj", "{6EBEA40F-97A5-4A5D-91E3-4B9D1E61925B}"
 	ProjectSection(ProjectDependencies) = postProject
+		{320409EA-5851-43A6-A9E7-8ED6B88CA300} = {320409EA-5851-43A6-A9E7-8ED6B88CA300}
+		{5556D096-C30C-40EE-89A1-C16CCF69238A} = {5556D096-C30C-40EE-89A1-C16CCF69238A}
 		{79DCA8A8-39BE-43ED-A423-140E0188768E} = {79DCA8A8-39BE-43ED-A423-140E0188768E}
 	EndProjectSection
 EndProject
@@ -14,7 +16,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniTemplateEnginge", "Mini
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniTemplateEngingeUnitTests", "MiniTemplateEngingeUnitTests\MiniTemplateEngingeUnitTests.csproj", "{706CF149-A99A-4017-8480-D6BB8BE7ACAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniHttpServerEgor.Framework", "MiniHttpServerEgor.Framework\MiniHttpServerEgor.Framework.csproj", "{79DCA8A8-39BE-43ED-A423-140E0188768E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniHttpServerEgorFramework", "MiniHttpServerEgor.Framework\MiniHttpServerEgorFramework.csproj", "{79DCA8A8-39BE-43ED-A423-140E0188768E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyORMLibrary", "MyORMLibrary\MyORMLibrary.csproj", "{320409EA-5851-43A6-A9E7-8ED6B88CA300}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +42,10 @@ Global
 		{79DCA8A8-39BE-43ED-A423-140E0188768E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79DCA8A8-39BE-43ED-A423-140E0188768E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79DCA8A8-39BE-43ED-A423-140E0188768E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{320409EA-5851-43A6-A9E7-8ED6B88CA300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{320409EA-5851-43A6-A9E7-8ED6B88CA300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{320409EA-5851-43A6-A9E7-8ED6B88CA300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{320409EA-5851-43A6-A9E7-8ED6B88CA300}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +55,7 @@ Global
 		{5556D096-C30C-40EE-89A1-C16CCF69238A} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
 		{706CF149-A99A-4017-8480-D6BB8BE7ACAD} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
 		{79DCA8A8-39BE-43ED-A423-140E0188768E} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+		{320409EA-5851-43A6-A9E7-8ED6B88CA300} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E54F3EC-9360-41DC-B1C6-3AD27E92E382}
