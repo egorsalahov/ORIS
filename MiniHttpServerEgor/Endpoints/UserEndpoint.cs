@@ -18,7 +18,7 @@ namespace MiniHttpServerEgor.Endpoints
 
             var users = context.ReadByAll();
 
-            return null; //return ...
+            return Json(users); 
         }
 
         [HttpPost("users")]
@@ -28,7 +28,7 @@ namespace MiniHttpServerEgor.Endpoints
 
             var createdUser = context.Create(user);
 
-            return null; //return ...
+            return Json(createdUser); //return ...
         }
 
         [HttpDelete("users")]
@@ -38,7 +38,7 @@ namespace MiniHttpServerEgor.Endpoints
 
             context.DeleteByAge(age);
 
-            return null; //return ...
+            return null; 
         }
 
         [HttpPut("users")]
@@ -48,7 +48,7 @@ namespace MiniHttpServerEgor.Endpoints
 
             context.UpdatePassword(user, newPassword);
 
-            return null; //return ...
+            return null; 
         }
     }
 }

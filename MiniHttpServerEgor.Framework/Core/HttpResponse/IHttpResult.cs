@@ -9,6 +9,6 @@ namespace MiniHttpServerEgorFramework.Core.HttpResponse
 {
     public interface IHttpResult
     {
-        string Execute(HttpListenerContext context);
+        string Execute(HttpListenerContext context); //чтобы не писать в каждом методе в контроллере что мы отдаем html, на базе шаблонизатора
     }
 }

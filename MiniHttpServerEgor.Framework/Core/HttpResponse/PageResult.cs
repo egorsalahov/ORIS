@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using MiniTemplateEnginge.Core;
 
 namespace MiniHttpServerEgorFramework.Core.HttpResponse
 {
@@ -18,19 +19,24 @@ namespace MiniHttpServerEgorFramework.Core.HttpResponse
             _data = data;
         }
 
+        //тут отдается html-код на основе шаблонизатора, для методов в контроллере
         public string Execute(HttpListenerContext context)
         {
-            // context.Response.ContentType = "application/html";
-            // context.Response.StatusCode = "200";
-            // return TepmlatorEngine.GetByFile(pathTemplate, data)
+             context.Response.ContentType = "application/html";
+             context.Response.StatusCode = 200;
+             context.Response.ContentType = "text/html; charset=utf-8";
 
-            // TODO: доработать логику в EndpointHandler
-            // TODO: вызов методов шаблонизатора
-            // TODO: реализовать JsonResult
-            // Создать проект с тестами для  MiniHttpServer.Framework.UnitTests
+
+            // TODO: реализовать JsonResult (это класс как вот этот PageResult, тоже наследуется от IHttpResult)
+
+            // TODO: доработать логику в EndpointHandler (что возвращать если пришла string, что возвращать если пришло json)
+
+
+            // Создать проект с тестами для  MiniHttpServerEgorFramework.UnitTests
             // покрыть тестами класс HttpServer
 
-            return String.Empty;
+            HtmlTemplateRenderer render = new HtmlTemplateRenderer();
+            return render.RenderFromFile(_pathTemplate, _data);
         }
     }   
 }

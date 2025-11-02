@@ -1,8 +1,9 @@
 ﻿
 using MiniHttpServerEgor.Services;
-using MiniHttpServerEgorFramework.Core.Attributes;
 using MiniHttpServerEgorFramework.Core;
+using MiniHttpServerEgorFramework.Core.Attributes;
 using MiniHttpServerEgorFramework.Core.HttpResponse;
+using System.Text.Json;
 
 namespace MiniHttpServerEgor.Endpoints
 {
@@ -13,9 +14,9 @@ namespace MiniHttpServerEgor.Endpoints
         [HttpGet]
         public IHttpResult LoginPage()
         {
-            var obj = new { };
+            var obj = new {  };
 
-            return Page("index.html", obj);
+            return Page("Template/Page/login.thtml", obj);
         }
 
         // Get /auth/json
@@ -24,18 +25,22 @@ namespace MiniHttpServerEgor.Endpoints
         {
             var user = new { Name = "sfdsdf" };
 
-            return null;//Json(user);
-
-            // ответ  '{"username":"Борис","Age":23}'
+            return Json(user);
         }
 
 
         // Post /auth/
         [HttpPost]
-        public void Login(/*string email, string password*/)
+        public async Task<IHttpResult> Login(string email, string password)
         {
+           
             // Отправка на почту email указанного email и password
-            // EmailService.SendEmail(email, title, message);
+            EmailService emailService = new EmailService();
+            await emailService.SendEmailAsync(email, "Авторизация прошла успешно", password);
+
+            string json = "{\"result\":\"отправка сообщения на почту прошла успешно\"}";
+            return Json(json);
+            
         }
 
 

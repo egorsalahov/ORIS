@@ -14,5 +14,7 @@ namespace MiniHttpServerEgorFramework.Core
         }
 
         protected IHttpResult Page(string pathTemplate, object data) => new PageResult (pathTemplate, data);
+
+        protected IHttpResult Json(object data) => new JsonResult(data);
     }
 }
