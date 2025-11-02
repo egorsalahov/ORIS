@@ -17,6 +17,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniTemplateEngingeUnitTests", "MiniTemplateEngingeUnitTests\MiniTemplateEngingeUnitTests.csproj", "{706CF149-A99A-4017-8480-D6BB8BE7ACAD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniHttpServerEgorFramework", "MiniHttpServerEgor.Framework\MiniHttpServerEgorFramework.csproj", "{79DCA8A8-39BE-43ED-A423-140E0188768E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5556D096-C30C-40EE-89A1-C16CCF69238A} = {5556D096-C30C-40EE-89A1-C16CCF69238A}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyORMLibrary", "MyORMLibrary\MyORMLibrary.csproj", "{320409EA-5851-43A6-A9E7-8ED6B88CA300}"
 EndProject
