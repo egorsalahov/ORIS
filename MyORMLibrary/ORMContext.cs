@@ -19,7 +19,6 @@ namespace MyORMLibrary
 
         public User Create(User entity)
         {
-            
             //Достаю из entity данные чтобы добавить их в sql запрос
             int ageEntity = entity.Age;
             string loginEntity = entity.Login;
@@ -159,7 +158,7 @@ namespace MyORMLibrary
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 connection.Open();
-                string sql = $"DELETE FROM users_ WHERE age = {age}";
+                string sql = $"DELETE FROM users WHERE age = {age}";
                 SqlCommand command = new SqlCommand(sql, connection);
 
                 command.ExecuteNonQuery();
