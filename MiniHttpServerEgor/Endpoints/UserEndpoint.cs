@@ -28,7 +28,7 @@ namespace MiniHttpServerEgor.Endpoints
 
             var createdUser = context.Create(user);
 
-            return Json(createdUser); //return ...
+            return Json(createdUser);
         }
 
         [HttpDelete("users")]
