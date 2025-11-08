@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MyORMLibrary
 {
-    public class ExpressionParser
+    public class ExpressionParser //парсер из expression в sql
     {
         public string ParseExpression(Expression expression)
         {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MyORMLibrary.Practice_7
 {
-    public class SqlQueryBuilder<T>
+    public class SqlQueryBuilder<T> //строит sql запрос на основе выражения
     {
         private readonly ExpressionParser _expressionParser = new ExpressionParser();
 
