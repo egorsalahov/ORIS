@@ -1,0 +1,22 @@
+﻿{
+  "Domain": "localhost",
+  "Port": "8080",
+  "SmtpSettings": [
+    {
+      "Name": "Mail.ru",
+      "Host": "smtp.mail.ru",
+      "Port": 587,
+      "EnableSsl": true,
+      "Username": "friestr65@mail.ru",
+      "Password": "BHXJScHSA9xY9bWgLDoh"
+    },
+    {
+      "Name": "Gmail",
+      "Host": "smtp.gmail.com",
+      "Port": 587,
+      "EnableSsl": true,
+      "Username": "egorsalahov2@gmail.com",
+      "Password": "fmoy qquu jlxg kjmm"
+    }
+  ]
+}

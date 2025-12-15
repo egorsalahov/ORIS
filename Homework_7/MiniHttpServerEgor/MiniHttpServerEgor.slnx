@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="../MiniHttpServerEgorFramework/MiniHttpServerEgorFramework.csproj" Id="e61691ff-da33-40df-b0b7-2c2b9778bb59" />
+  <Project Path="../MiniHttpServerEgorFrameworkUnitTests/MiniHttpServerEgorFrameworkUnitTests.csproj" Id="a1f61753-548d-40d4-9880-7377e6036782" />
+  <Project Path="../MiniTemplateEnginge/MiniTemplateEnginge.csproj" Id="6a0ee147-b781-4ff0-89c8-1da7b0ec5c1d" />
+  <Project Path="../MiniTemplateEngingeUnitTests/MiniTemplateEngingeUnitTests.csproj" Id="5bb166bb-c662-4147-a6d1-7365acb3925e" />
+  <Project Path="../MyORMLibrary/MyORMLibrary.csproj" Id="13afaa85-64e8-4722-8471-0acb5a5c398d" />
+  <Project Path="MiniHttpServerEgor.csproj" />
+</Solution>

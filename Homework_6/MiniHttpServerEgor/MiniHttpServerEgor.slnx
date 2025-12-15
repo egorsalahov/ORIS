@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="../MiniHttpServerEgorFramework/MiniHttpServerEgorFramework.csproj" />
+  <Project Path="../MiniHttpServerEgorFrameworkUnitTests/MiniHttpServerEgorFrameworkUnitTests.csproj" />
+  <Project Path="../MiniTemplateEngine/MiniTemplateEngine.csproj" />
+  <Project Path="../MiniTemplateEngineUnitTests/MiniTemplateEngineUnitTests.csproj" />
+  <Project Path="MiniHttpServerEgor.csproj" />
+</Solution>
