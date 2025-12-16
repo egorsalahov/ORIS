@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../GameAndDot.GUI/GameAndDot.GUI.csproj" />
+  <Project Path="../GameAndDot.MAUI/GameAndDot.MAUI.csproj" />
+  <Project Path="../GameAndDot.Server/GameAndDot.Server.csproj" />
+  <Project Path="../GameAndDot.Shared/GameAndDot.Shared.csproj" />
+</Solution>

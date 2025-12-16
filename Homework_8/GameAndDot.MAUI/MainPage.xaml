@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:localConverter="clr-namespace:GameAndDot.MAUI.Converters"
+             xmlns:localDrawable="clr-namespace:GameAndDot.MAUI.Drawables"
+             x:Class="GameAndDot.MAUI.MainPage"
+             Title="Игра 'Точка'">
+
+    <ContentPage.Resources>
+        <localConverter:ColorConverter x:Key="ColorConverter" />
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+
+        <VerticalStackLayout x:Name="LoginLayout"
+                             Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2"
+                             BackgroundColor="{StaticResource Gray100}"
+                             ZIndex="10"
+                             Spacing="25" Padding="50" VerticalOptions="Center">
+
+            <Label Text="Введите имя пользователя:" FontSize="Medium" HorizontalOptions="Center"/>
+            <Entry x:Name="UsernameEntry" Placeholder="Имя игрока" Text="NewPlayer" HorizontalOptions="Fill"/>
+            <Button x:Name="ConnectButton"
+                    Text="Подключиться и начать игру"
+                    Clicked="ConnectButton_Clicked"
+                    HorizontalOptions="Fill"/>
+            <ActivityIndicator x:Name="ActivityIndicator" IsRunning="False" IsVisible="False" HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+
+        <HorizontalStackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                               x:Name="InfoBarLayout" IsVisible="False"
+                               Spacing="10" Padding="10" BackgroundColor="#E0E0E0">
+            <Label Text="Вы: " FontSize="Medium" VerticalOptions="Center"/>
+            <Label x:Name="UsernameLabel" FontSize="Medium" FontAttributes="Bold" VerticalOptions="Center"/>
+            <Label Text="(" FontSize="Medium" VerticalOptions="Center"/>
+            <Label x:Name="ColorLabel" FontSize="Medium" FontAttributes="Bold" VerticalOptions="Center"/>
+            <Label Text=")" FontSize="Medium" VerticalOptions="Center"/>
+        </HorizontalStackLayout>
+
+        <GraphicsView x:Name="GameField" Grid.Row="1" Grid.Column="0" BackgroundColor="White" IsVisible="False">
+            <GraphicsView.Drawable>
+                <localDrawable:DotDrawable x:Name="DotDrawer"/>
+            </GraphicsView.Drawable>
+            <GraphicsView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="GameField_Tapped" Buttons="Primary"/>
+            </GraphicsView.GestureRecognizers>
+        </GraphicsView>
+
+        <VerticalStackLayout x:Name="PlayersListLayout" IsVisible="False"
+                             Grid.Row="1" Grid.Column="1" Padding="10" BackgroundColor="#F0F0F0">
+            <Label Text="Игроки:" FontSize="Large" FontAttributes="Bold" Margin="0,0,0,5"/>
+            <CollectionView x:Name="PlayersList">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding Username}" FontSize="Medium" Margin="0,2">
+                            <Label.TextColor>
+                                <Binding Path="Color" Converter="{StaticResource ColorConverter}"/>
+                            </Label.TextColor>
+                        </Label>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+
+    </Grid>
+</ContentPage>
